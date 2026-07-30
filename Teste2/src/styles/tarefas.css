@@ -1,0 +1,38 @@
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:hover {
+  background: #fafafa;
+}
+
+.item.feita {
+  color: #999;
+  text-decoration: line-through;
+  background: #f1f8f2;
+}
+
+.item .check {
+  display: inline-block;
+  width: 22px;
+  color: #2a5298;
+  font-weight: bold;
+}
+
+.item.feita .check {
+  color: #4caf50;
+}
